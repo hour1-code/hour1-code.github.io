@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+</head>
+<style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, sans-serif;
+            background: #fff8fc;
+            color: #222;
+        }
+        .logo{
+            display: flex;
+            justify-content: space-between;
+            align-items: left;
+            background-color: rgb(15, 1, 118);
+            padding: 10px 20px;
+            color: #fff;
+        }
+        img{
+            width: 140px;
+            height: auto;
+            }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1a85ff;
+            padding: 5px 10px;
+        }
+        nav ul{
+            display: flex;
+            list-style: none;
+        }
+        nav ul li{
+            margin-left: 10px;
+            display:flex
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: #fff;
+        }
+        nav ul li a:hover,
+        nav ul li a.active{
+            color: #ffda48;
+            text-shadow: 0 0 10px #ffcc00;
+        }
+        .hero{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 60vh;
+            background: linear-gradient(135deg, #0f0176, #1a85ff);
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: #fff;
+        }
+        .main_card{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            width: 100%;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card{
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            align-items: center;
+            width: 100%;
+            max-width: 300px;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            border: 1px solid;
+            border-radius: 10px;
+            overflow: hidden;
+            color: #000000;
+            box-shadow: 0 0 15px;
+            padding: 20px;      
+            margin-bottom: 30px;
+        }
+        .card:hover{
+            color: burlywood;
+            box-shadow: 0 0 15px;
+        }
+        .card img{
+            width: 100%;
+            height: auto;
+            align-items: center;object-fit: cover;
+            border: 1px solid;
+            transition: transform 0.3s ease;
+            border-radius: 10px;
+        }
+        .card:hover img{
+            transform: scale(1.05);
+        }
+        .card h3{
+            margin: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .card p{
+            margin-bottom: 10px;
+        }
+        button{
+            padding: 8px 25px;
+            border: none;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: #386bf8;
+        }
+        button:hover{
+            background: goldenrod;
+            transition: transform 0.3s ease;
+            transform: scale(1.1);
+        }
+          footer{
+            background: rgba(255, 42, 42, 0.79);
+            color: white;
+            text-align: center;
+            padding: 20px ;
+        }
+    </style>
+</head>
+<body>
+    <nav class="logo">
+        <h1 class="logo">Paññāsāstra University of Cambodia - PUC</h1>
+        <img src="img/logo.png" sizes="10px" alt="PUC logo">
+        <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a class = "active" href="course.html">Courses</a></li>
+            <li><a href="gallary.html">Gallery</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="contect.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="main_card">
+        <div class="card">
+            <img src="img/data.jpg" alt="Card Image">
+            <h3>Database Management Systems</h3>
+            <p>Card description goes here. This is a sample text for the card content.</p>
+            <p>Price: $79.80</p>
+            <button>Enroll Now</button>
+        </div>
+        <div class="card">
+            <img src="img/creative-gradient-code-logo_23-2148820572.avif" alt="Card Image">
+            <h3>Multi Media and Web Design</h3>
+            <p>Card description goes here. This is a sample text for the card content.</p>
+            <p>Price: $89.99</p>
+            <button>Enroll Now</button>
+        </div>
+        <div class="card">
+            <img src="img/images (2).jpg" alt="Card Image">
+            <h3>Python Programming</h3>
+            <p>Card description goes here. This is a sample text for the card content.</p>
+            <p>Price: $99.99</p>
+            <button>Enroll Now</button>
+        </div>
+        <div class="card">
+            <img src="img/data.jpg" alt="Card Image">
+            <h3>Database Management Systems</h3>
+            <p>Card description goes here. This is a sample text for the card content.</p>
+            <p>Price: $79.80</p>
+            <button>Enroll Now</button>
+        </div>
+        <div class="card">
+            <img src="img/creative-gradient-code-logo_23-2148820572.avif" alt="Card Image">
+            <h3>Multi Media and Web Design</h3>
+            <p>Card description goes here. This is a sample text for the card content.</p>
+            <p>Price: $89.99</p>
+            <button>Enroll Now</button>
+        </div>
+        <div class="card">
+            <img src="img/images.jpg" alt="Card Image">
+            <h3>C Programming</h3>
+            <p>Card description goes here. This is a sample text for the card content.</p>
+            <p>Price: $69.99</p>
+            <button>Enroll Now</button>
+        </div>
+    </div>
+    <footer>
+        @PUC
+    </footer>
+    
+</body>
+</html>
